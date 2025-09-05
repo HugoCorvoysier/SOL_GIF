@@ -90,18 +90,18 @@
   </div>
 
   <script>
-  function checkPassword() {
-    const input = document.getElementById('password').value;
-    const correct = "EFTC2025"; // your poster password
-    const errorMsg = document.getElementById('error-message');
-  
-    if (input === correct) {
-      document.getElementById('content').style.display = 'block';
-      errorMsg.textContent = ""; // clear any previous error
-    } else {
-      errorMsg.textContent = "Wrong password! Please try again.";
+    function checkPassword() {
+      const input = document.getElementById('password').value;
+      const correct = "EFTC2025"; // your poster password
+      const errorMsg = document.getElementById('error-message');
+    
+      if (input === correct) {
+        document.getElementById('content').style.display = 'block';
+        errorMsg.textContent = ""; // clear any previous error
+      } else {
+        errorMsg.textContent = "Wrong password! Please try again.";
+      }
     }
-  }
   </script>
 </body>
 </html>
