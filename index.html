@@ -2,13 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Protected GIFs</title>
   <style>
-    body { font-family: sans-serif; text-align: center; margin-top: 50px; }
-    #content { display: none; }
-    input { padding: 8px; }
-    button { padding: 8px 12px; margin-top: 10px; }
-    a { display: block; margin: 10px; }
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    h2 {
+      font-size: 2em; /* bigger heading */
+    }
+
+    #password-container {
+      margin: 20px 0;
+    }
+
+    input#password {
+      padding: 15px;
+      font-size: 1.5em; /* bigger text for typing */
+      width: 80%;
+      max-width: 400px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 1.5em;
+      margin-top: 15px;
+      border-radius: 5px;
+      border: none;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #content {
+      display: none;
+      margin-top: 30px;
+    }
+
+    #content h3 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+
+    #content a {
+      display: block;
+      font-size: 1.5em;
+      margin: 15px 0;
+      color: #007BFF;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    #content a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      input#password {
+        width: 95%;
+      }
+
+      button {
+        width: 95%;
+      }
+    }
   </style>
 </head>
 <body>
