@@ -13,23 +13,23 @@
 </head>
 <body>
   <h2>Enter Password to Access GIFs</h2>
-  <input type="password" id="password" placeholder="Enter password">
+  <input type="text" id="password" placeholder="Enter password">
   <button onclick="checkPassword()">Submit</button>
 
   <div id="content">
     <h3>Available GIFs</h3>
-    <a href="https://raw.githubusercontent.com/HugoCorvoysier/SOL_GIF/main/3D_plasma_n.gif" target="_blank">GIF 1</a>
-    <a href="https://github.com/HugoCorvoysier/SOL_GIF/blob/main/3D_plasma_Te.gif" target="_blank">GIF 2</a>
+    <a href="https://raw.githubusercontent.com/HugoCorvoysier/SOL_GIF/main/3D_plasma_n.gif" target="_blank">3D_SOLEDGE_slab_n</a>
+    <a href="https://github.com/HugoCorvoysier/SOL_GIF/blob/main/3D_plasma_Te.gif" target="_blank">3D_SOLEDGE_slab_Te</a>
   </div>
 
   <script>
     function checkPassword() {
       const input = document.getElementById('password').value;
-      const correct = "mypassword"; // <--- set your poster password here
+      const correct = "EFTC2025"; // <--- set your poster password here
       if (input === correct) {
         document.getElementById('content').style.display = 'block';
       } else {
-        alert("Wrong password!");
+        alert("Wrong password ! Please try again.");
       }
     }
   </script>
